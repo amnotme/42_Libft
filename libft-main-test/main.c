@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:54:07 by lhernand          #+#    #+#             */
-/*   Updated: 2017/11/09 18:16:28 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/07/26 12:56:00 by leopoldoh        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -561,7 +561,6 @@ int		main(void)
 	char ft_memset_src[50] = "GeeksForGeeks is for programming geeks.";
 	ft_putstr("\nft_memset => Before memset(): ");
 	ft_putendl(ft_memset_src);
-	// Fill 8 characters starting from str[13] with '.'
 	red();
 	ft_memset(ft_memset_src + 13, '.', 8);
 	ft_putstr("ft_memset => After memset():  ");
@@ -571,7 +570,6 @@ int		main(void)
 	char ft_memset_src2[50] = "Leopoldo Hernandez Oliva";
 	ft_putstr("\nft_memset => Before memset(): ");
 	ft_putendl(ft_memset_src2);
-	// Fill 8 characters starting from str[13] with '.'
 	red();
 	ft_memset(ft_memset_src2 + 9, '#', 9);
 	ft_putstr("ft_memset => After memset():  ");
@@ -584,7 +582,6 @@ int		main(void)
 	char ft_bzero_src[50] = "GeeksForGeeks is for programming geeks.";
 	ft_putstr("\nft_bzero => Before ft_bzero(): ");
 	ft_putendl(ft_bzero_src);
-	// Fill 8 characters starting from str[13] with '.'
 	red();
 	ft_bzero(ft_bzero_src + 13, 8);
 	ft_putstr("ft_bzero => After ft_bzero():  ");
@@ -594,7 +591,6 @@ int		main(void)
 	char ft_bzero_src2[50] = "Leopoldo Hernandez Oliva";
 	ft_putstr("\nft_bzero => Before bzero(): ");
 	ft_putendl(ft_bzero_src2);
-	// Fill 8 characters starting from str[13] with '.'
 	red();
 	ft_bzero(ft_bzero_src2 + 9, 9);
 	ft_putstr("ft_bzero => After bzero():  ");
@@ -607,7 +603,6 @@ int		main(void)
 	char ft_memcpy_dst[50];
 	ft_putstr("\ft_memcpy => (in source) 'GeeksForGeeks is for programming geeks. :");
 	ft_putendl(ft_memcpy_src);
-	// Fill 8 characters starting from str[13] with '.'
 	red();
 	ft_memcpy(ft_memcpy_dst, ft_memcpy_src, 13);
 	ft_putstr("ft_memcpy => (in destination) => 13 bytes copied:  ");
@@ -618,7 +613,6 @@ int		main(void)
 	char ft_memcpy_dst2[50];
 	ft_putstr("\nft_memcpy => (in source) : ");
 	ft_putendl(ft_memcpy_src2);
-	// Fill 8 characters starting from str[13] with '.'
 	red();
 	ft_memcpy(ft_memcpy_dst2, ft_memcpy_src2, 9);
 	ft_putstr("ft_memcpy => (in destination) => 9 bytes copied: ");
@@ -627,7 +621,6 @@ int		main(void)
 
 
 
-	/*
 	   testn(-1);
 	   printf("ft_isprime => '2'            => 'TRUE', %s\n", true_false(ft_isprime(2)));
 	   printf("ft_isprime => '3'            => 'TRUE', %s\n", true_false(ft_isprime(3)));
@@ -724,7 +717,6 @@ int		main(void)
 	ft_putendl("BOLD CYAN");
 	c_reset();
 	ft_putendl("RESET TO WHITE");
-	*/
 
-		return (0);
+	return (0);
 }
